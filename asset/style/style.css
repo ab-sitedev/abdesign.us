@@ -736,6 +736,7 @@ section#testimonials {
 section#contact {
   background: #F7FBFB;
   height: 100%;
+  margin-bottom: 60px;
 }
 
 section#contact .form-container {
