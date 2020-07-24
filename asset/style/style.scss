@@ -557,7 +557,7 @@ section#contact{
             }
         }
 
-        input, textarea, #recaptcha{
+        input, textarea{
             margin-bottom: 1.5rem;
             padding: 1.5rem 2rem;
             border: none;
@@ -577,7 +577,7 @@ section#contact{
         }
 
         #submit{
-            margin-bottom: 1.5rem;
+            margin: 1.5rem 0;
             padding: 1.5rem 2rem;
             border: none;
             outline: none;
