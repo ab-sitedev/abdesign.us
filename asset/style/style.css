@@ -247,7 +247,11 @@ section article .swiper-container .swiper-slide p span:before {
   content: '-';
 }
 
-section article .swiper-container .swiper-pagination-bullet-active {
+section article .swiper-container .swiper-pagination {
+  z-index: 50;
+}
+
+section article .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
   background: #69FFE0;
 }
 
@@ -599,16 +603,20 @@ section#custom article .process .step {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  -webkit-transition-delay: 5000s;
+          transition-delay: 5000s;
   opacity: 0;
   margin-bottom: 10rem;
 }
 
 section#custom article .process .step.unhide {
   opacity: 1;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
 section#custom article .process .step .icon {

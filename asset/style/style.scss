@@ -226,8 +226,11 @@ section{
                 }
             }
 
-            .swiper-pagination-bullet-active{
-                background: $color-accent;
+            .swiper-pagination{
+                z-index: 50;
+                .swiper-pagination-bullet-active{
+                    background: $color-accent;
+                }
             }
         }
     }
@@ -487,13 +490,15 @@ section#custom{
                 background: #fff;
                 box-shadow: $box-shadow-dark;
                 display: flex;
-                transition: all 1s ease-out;
+                transition: all 0.1s ease-out;
+                transition-delay: 5000s;
                 opacity: 0;
                 margin-bottom: 10rem;
     
                 &.unhide{
                     opacity: 1;
-                    transition: all 1s ease-out;
+                    transition: all 0.75s ease-out;
+                    transition-delay: 0.2s;
                 }
 
                 .icon{
