@@ -102,8 +102,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-margin: 120px;
-    -webkit-scroll-snap-margin: 120px;
+    scroll-margin-top: 120px;
 
     article{
         margin-top: 120px;
