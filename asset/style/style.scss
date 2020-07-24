@@ -37,6 +37,7 @@ html{
     font-family: $font-body;
     font-weight: 400;
     background-color: $color-background-dark;
+    scroll-behavior: smooth;
 }
 
 html h1,
@@ -130,6 +131,43 @@ section{
         
         p{
             margin-bottom: 30px;
+        }
+
+        .cta-container{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 120px;
+
+            a.btn{
+                text-decoration: none;
+                padding: 8px 20px;
+                background: $color-accent;
+                border-radius: $border-round;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+
+                h5{
+                    font-weight: 600;
+                    color: $color-primary;
+                }
+
+                &:hover{
+                    background: $color-cta;
+                }
+
+                &:hover .fas{
+                    padding-left: 3rem;
+                    transition: all .25s ease-in-out;
+                }
+
+                i.fas{
+                    font-size: 2vmax;
+                    margin: 0 0 -2px 2rem;
+                    transition: all .25s ease-in-out;
+                }
+            }
         }
     }
 }
@@ -474,6 +512,7 @@ section#custom{
                 }
             }
         }
+
     }
 }
 
@@ -645,7 +684,7 @@ $bp-mobile-s: 320px;
 
         .menu-container{
             ul li a{
-                font-size: 1.75rem;
+                font-size: 1.65rem;
             }
         }
     }
@@ -664,6 +703,21 @@ $bp-mobile-s: 320px;
         article{
             *.spaced *{
                 margin: 5rem 0;
+            }
+
+            .cta-container{
+                margin-bottom: 60px;
+    
+                a.btn{
+    
+                    &:hover{
+                        background: $color-accent;
+                    }
+    
+                    &:hover .fas{
+                        padding-left: 0;
+                    }
+                }
             }
         }
     }
@@ -692,6 +746,22 @@ $bp-mobile-s: 320px;
 
             a{
                 margin-top: 20px;
+
+                &:hover{
+                    padding-top: 0;
+                }
+            }
+
+            .cta-container{
+                a.btn{
+                    &:hover{
+                        background: $color-accent;
+                    }
+    
+                    &:hover .fas{
+                        padding-left: 0;
+                    }
+                }
             }
         }
     }

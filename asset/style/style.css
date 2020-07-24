@@ -18,6 +18,7 @@ html {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   background-color: #242E33;
+  scroll-behavior: smooth;
 }
 
 html h1,
@@ -125,6 +126,56 @@ section article h4 {
 
 section article p {
   margin-bottom: 30px;
+}
+
+section article .cta-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+section article .cta-container a.btn {
+  text-decoration: none;
+  padding: 8px 20px;
+  background: #69FFE0;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section article .cta-container a.btn h5 {
+  font-weight: 600;
+  color: #2E3C42;
+}
+
+section article .cta-container a.btn:hover {
+  background: #5CFF82;
+}
+
+section article .cta-container a.btn:hover .fas {
+  padding-left: 3rem;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+section article .cta-container a.btn i.fas {
+  font-size: 2vmax;
+  margin: 0 0 -2px 2rem;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 /* MAIN NAV */
@@ -748,7 +799,7 @@ footer {
     padding: 0 5rem;
   }
   nav .menu-container ul li a {
-    font-size: 1.75rem;
+    font-size: 1.65rem;
   }
   /* SIDENAV */
   /* HOME */
@@ -761,6 +812,15 @@ footer {
   /* GLOBAL SETTINGS */
   section article *.spaced * {
     margin: 5rem 0;
+  }
+  section article .cta-container {
+    margin-bottom: 60px;
+  }
+  section article .cta-container a.btn:hover {
+    background: #69FFE0;
+  }
+  section article .cta-container a.btn:hover .fas {
+    padding-left: 0;
   }
   /* MAIN NAV */
   nav .menu-container {
@@ -782,6 +842,15 @@ footer {
   }
   section#home .title-container a {
     margin-top: 20px;
+  }
+  section#home .title-container a:hover {
+    padding-top: 0;
+  }
+  section#home .title-container .cta-container a.btn:hover {
+    background: #69FFE0;
+  }
+  section#home .title-container .cta-container a.btn:hover .fas {
+    padding-left: 0;
   }
   /* CUSTOM */
   section#custom article .process .step {
