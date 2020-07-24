@@ -29,7 +29,7 @@ $color-background-dark: #242E33;
     margin: 0;
     box-sizing: border-box;
     color: $color-primary;
-    /*border: 1px solid lightgreen;*/
+    /*border: 1px solid pink;*/
 }
 
 html{
@@ -479,18 +479,96 @@ section#custom{
 
 /* TESTIMONIALS */
 /* CONTACT */
+section#contact{
+    background: $color-background-light;
+    height: 100%;
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    
-    .sidenav{
-        padding-top: 15px;
+    .form-container{
+        width: 100%;
+        margin-top: 120px;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
 
-        div a{
+        .spacer{
+            width: 50%;
+            background-image: url(../img/ab_webdev_logo.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+
+    form{
+        width: 360px;
+        min-width: 360px;
+        max-width: 360px;
+        margin-right: 120px;
+
+        label{
             font-size: 1.5rem;
+            background: rgb(247,251,251);
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding: 3px 0 15px 3px;
+            font-weight: bold;
+
+            span{
+                color: red;
+            }
+        }
+
+        input, textarea{
+            margin-bottom: 1.5rem;
+            padding: 1.5rem 2rem;
+            border: none;
+            outline: none;
+            background: white;
+            box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
+            -webkit-box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
+            border-radius: 10px;
+            width: 100%;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+
+            &:focus{
+                box-shadow: 0 0 0 1pt $color-cta;
+            }
+        }
+
+        #submit{
+            margin-bottom: 1.5rem;
+            padding: 1.5rem 2rem;
+            border: none;
+            outline: none;
+            background: $color-accent;
+            color: #2E3C42;
+            box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
+            -webkit-box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
+            border-radius: 10px;
+            width: 100%;
+            font-weight: 600;
+            font-size: 3rem;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            transition: all .25s ease-in-out;
+            font-family: $font-heading;
+
+            &:hover{
+                cursor: pointer;
+                background: $color-cta;
+                transition: all .25s ease-in-out;
+            }
         }
     }
 }
+
+footer{
+    height: 300px;
+}
+
 
 /* breakpoints */
 $bp-laptop-l: 1440px;
@@ -504,6 +582,11 @@ $bp-mobile-s: 320px;
 @media(max-width: $bp-laptop-l){
 
     /* GLOBAL SETTINGS */
+    section{
+        article{
+            margin-top: 60px;
+        }
+    }
     
     /* MAIN NAV */
     nav{
@@ -532,6 +615,19 @@ $bp-mobile-s: 320px;
     /* CUSTOM */
     /* TESTIMONIALS */
     /* CONTACT */
+    section#contact{
+        .form-container{
+            margin-top: 60px;
+
+            form{
+                margin-right: 60px;
+            }
+            .spacer{
+                width: 90%;
+            }
+        }
+    }
+
 }
 
 @media(max-width: $bp-laptop-m){
@@ -637,6 +733,18 @@ $bp-mobile-s: 320px;
     }
     /* TESTIMONIALS */
     /* CONTACT */
+    section#contact{
+        .form-container{
+            form{
+                margin-right: 30px;
+            }
+            .spacer{
+                width: 100%;
+                background-image: url(../img/ab_webdev_logo_vert.svg);
+            }
+        }
+    }
+
 }
 
 @media(max-width: $bp-tablet){
@@ -667,6 +775,31 @@ $bp-mobile-s: 320px;
 
     /* TESTIMONIALS */
     /* CONTACT */
+    section#contact{
+        article{
+            h1{
+                text-align: center;
+            }
+        }
+        .form-container{
+            margin-top: 60px;
+            flex-direction: column-reverse;
+            align-items: center;
+            height: 100%;
+
+            form{
+                width: 100%;
+                min-width: unset;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .spacer{
+                height: 100px;
+                width: 100%;
+                background-image: url(../img/ab_webdev_logo.svg);
+            }
+        }
+    }
 
 }
 
@@ -695,4 +828,17 @@ $bp-mobile-s: 320px;
 
     /* TESTIMONIALS */
     /* CONTACT */
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    
+    .sidenav{
+        padding-top: 15px;
+
+        div a{
+            font-size: 1.5rem;
+        }
+    }
 }

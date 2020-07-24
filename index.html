@@ -145,9 +145,61 @@
     
     </section>
 
-    <section id="custom" onclick="closeNav()">
-    
+    <section id="contact" onclick="closeNav()">
+        <article>
+            <h1>Let's Begin</h1>
+
+            <div class="form-container">
+                <div class="spacer"></div>
+                <form action="POST" netlify="true" data-netlify-recaptcha="true" id="contact-form" name="contact-form">
+
+                    <!-- FIRST NAME -->
+                    <div>
+                        <label for="fullname">Full Name <span>*</span></label>
+                    </div>
+                    <div>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+
+                    <!-- EMAIL ADDRESS -->
+                    <div>
+                        <label for="email">E-Mail Address <span>*</span></label>
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <!-- PHONE NUMBER -->
+                    <div>
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    <div>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message">Message <span>*</span></label>
+                    </div>
+                    <div>
+                    <textarea name="message" id="message" form="contact-form" placeholder="Tell me a little about what you're looking for." cols="30" rows="5" required></textarea>
+                    </div>
+
+                    <!-- reCAPTCHA 2 -->
+                    <div data-netlify-recaptcha="true" id="recaptcha"></div>
+
+                    <!-- SUBMIT FORM -->
+                    <div>
+                        <input type="submit" value="Let's do this!" id="submit">
+                    </div>
+                </form>
+            </div>
+        </article>
     </section>
+
+    <footer>
+        
+    </footer>
 
 </body>
 </html>

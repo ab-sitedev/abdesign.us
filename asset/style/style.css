@@ -10,7 +10,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #2E3C42;
-  /*border: 1px solid lightgreen;*/
+  /*border: 1px solid pink;*/
 }
 
 html {
@@ -94,7 +94,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  scroll-margin: 120px;
+  scroll-margin-top: 120px;
 }
 
 section article {
@@ -601,19 +601,112 @@ section#custom article .process .step .detail .bottom p {
 
 /* TESTIMONIALS */
 /* CONTACT */
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav div a {
-    font-size: 1.5rem;
-  }
+section#contact {
+  background: #F7FBFB;
+  height: 100%;
+}
+
+section#contact .form-container {
+  width: 100%;
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+section#contact .form-container .spacer {
+  width: 50%;
+  background-image: url(../img/ab_webdev_logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+section#contact form {
+  width: 360px;
+  min-width: 360px;
+  max-width: 360px;
+  margin-right: 120px;
+}
+
+section#contact form label {
+  font-size: 1.5rem;
+  background: #f7fbfb;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 3px 0 15px 3px;
+  font-weight: bold;
+}
+
+section#contact form label span {
+  color: red;
+}
+
+section#contact form input, section#contact form textarea {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 2rem;
+  border: none;
+  outline: none;
+  background: white;
+  box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
+  border-radius: 10px;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+section#contact form input:focus, section#contact form textarea:focus {
+  -webkit-box-shadow: 0 0 0 1pt #5CFF82;
+          box-shadow: 0 0 0 1pt #5CFF82;
+}
+
+section#contact form #submit {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 2rem;
+  border: none;
+  outline: none;
+  background: #69FFE0;
+  color: #2E3C42;
+  box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
+  border-radius: 10px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 3rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+
+section#contact form #submit:hover {
+  cursor: pointer;
+  background: #5CFF82;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+footer {
+  height: 300px;
 }
 
 /* breakpoints */
 @media (max-width: 1440px) {
   /* GLOBAL SETTINGS */
+  section article {
+    margin-top: 60px;
+  }
   /* MAIN NAV */
   nav {
     padding: 0 7.5rem;
@@ -634,6 +727,15 @@ section#custom article .process .step .detail .bottom p {
   /* CUSTOM */
   /* TESTIMONIALS */
   /* CONTACT */
+  section#contact .form-container {
+    margin-top: 60px;
+  }
+  section#contact .form-container form {
+    margin-right: 60px;
+  }
+  section#contact .form-container .spacer {
+    width: 90%;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -712,6 +814,13 @@ section#custom article .process .step .detail .bottom p {
   }
   /* TESTIMONIALS */
   /* CONTACT */
+  section#contact .form-container form {
+    margin-right: 30px;
+  }
+  section#contact .form-container .spacer {
+    width: 100%;
+    background-image: url(../img/ab_webdev_logo_vert.svg);
+  }
 }
 
 @media (max-width: 768px) {
@@ -731,6 +840,31 @@ section#custom article .process .step .detail .bottom p {
   }
   /* TESTIMONIALS */
   /* CONTACT */
+  section#contact article h1 {
+    text-align: center;
+  }
+  section#contact .form-container {
+    margin-top: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  section#contact .form-container form {
+    width: 100%;
+    min-width: unset;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  section#contact .form-container .spacer {
+    height: 100px;
+    width: 100%;
+    background-image: url(../img/ab_webdev_logo.svg);
+  }
 }
 
 @media (max-width: 425px) {
@@ -750,5 +884,15 @@ section#custom article .process .step .detail .bottom p {
   /* CUSTOM */
   /* TESTIMONIALS */
   /* CONTACT */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav div a {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
