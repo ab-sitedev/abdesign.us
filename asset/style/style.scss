@@ -22,6 +22,7 @@ $color-link-clicked: #48527e;
 $color-link-hover: #52acc7;
 $color-background-light: #F7FBFB;
 $color-background-dark: #242E33;
+$color-complimentary-orange: #FFB75C;
 
 /* GLOBAL SETTINGS */
 *{
@@ -51,6 +52,10 @@ html h6{
 
     &.heavy{
         font-weight: 800;
+    }
+
+    &.light{
+        color: $color-primary-light;
     }
 }
 
@@ -127,6 +132,10 @@ section{
             font-weight: 600;
             color: $color-secondary;
             margin-bottom: 60px;
+
+            &.light{
+                color: $color-secondary-light;
+            }
         }
         
         p{
@@ -169,7 +178,63 @@ section{
                 }
             }
         }
+
+        .swiper-container {
+            width: 100%;
+            height: 400px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%);
+        
+            .swiper-slide{
+                background-position: center;
+                background-size: cover;
+                background: $color-background-light;
+                padding: 1rem 2rem;
+                height: 400px;
+
+                *{
+                    background: #fff;
+                    box-shadow: $box-shadow-dark;
+                    border-radius: $border-round;
+                    padding: .5rem 1rem;
+                }
+
+                h4{
+                    text-align: center;
+                    margin-bottom: 2rem;
+                }
+
+                p{
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 2vmax;
+
+                    span{
+                        background: transparent;
+                        box-shadow: none;
+                        border-radius: 0;
+                        padding: 1rem 0 0 0;
+                        font-style: italic;
+                        font-weight: 600;
+
+                        &:before{
+                            content: '-';
+                        }
+                    }
+                }
+            }
+
+            .swiper-pagination-bullet-active{
+                background: $color-accent;
+            }
+        }
     }
+}
+
+.relative-container{
+    position: relative;
 }
 
 /* MAIN NAV */
@@ -517,6 +582,10 @@ section#custom{
 }
 
 /* TESTIMONIALS */
+section#testimonials{
+    margin-bottom: 60px;
+}
+
 /* CONTACT */
 section#contact{
     background: $color-background-light;
@@ -564,11 +633,8 @@ section#contact{
             outline: none;
             background: white;
             box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
-            -webkit-box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
             border-radius: 10px;
             width: 100%;
-            -webkit-appearance: none;
-            -moz-appearance: none;
             appearance: none;
 
             &:focus{
@@ -584,13 +650,10 @@ section#contact{
             background: $color-accent;
             color: #2E3C42;
             box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
-            -webkit-box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
             border-radius: 10px;
             width: 100%;
             font-weight: 600;
             font-size: 3rem;
-            -webkit-appearance: none;
-            -moz-appearance: none;
             appearance: none;
             transition: all .25s ease-in-out;
             font-family: $font-heading;
@@ -768,6 +831,7 @@ $bp-mobile-s: 320px;
 
     /* CUSTOM */
     section#custom{
+
         article{
             .process{
                 .step{
@@ -786,15 +850,15 @@ $bp-mobile-s: 320px;
                         }
 
                         &#design{
-                            background: #F5AF37;
+                            background: $color-complimentary-orange;
                         }
 
                         &#develop{
-                            background: #656565;
+                            background: $color-primary;
                         }
 
                         &#deliver{
-                            background: #69FFE0;
+                            background: $color-accent;
                         }
                     }
                 }
