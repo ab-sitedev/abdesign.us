@@ -609,8 +609,6 @@ section#custom article .process .step.unhide {
   opacity: 1;
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
 }
 
 section#custom article .process .step .icon {
