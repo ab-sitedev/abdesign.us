@@ -197,8 +197,7 @@ section article .swiper-container {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  /*transform: translateX(-50%);*/
 }
 
 section article .swiper-container .swiper-slide {
