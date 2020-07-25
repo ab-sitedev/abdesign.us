@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Truly custom websites, designed and built from scratch, just for you!">
+    <meta name="keywords" content="best, custom, website, design, designer, develop, developer, build, builder, your, own, ab, abdesign, designs, html, css, javascript, js, html5, css3, js, sass">
+    <meta name="author" content="Aaron Banister">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+
+    <link rel="stylesheet" href="./asset/style/style.css">
+    <link rel="stylesheet" href="./asset/style/menu.css">
+    <link rel="icon" href="./asset/img/favicon.png" sizes="16x16 32x32 64x64 128x128" type="image/png"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    
+    
+    <script src="https://kit.fontawesome.com/5627a8fe6f.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="asset/js/nav.js"></script>
+
+    <title>Custom Website Design & Development | ab Design</title>
+</head>
+<body>
+
+    <nav>
+        <a href="#home" id="brand-container">
+            <div class="brand-container">
+                <img src="./asset/img/ab_webdev_logo_white.svg" alt="">
+                <div class="text-container">
+                    <h1>Design</h1>
+                    <h3>&amp; Development</h3>
+                </div>
+            </div>
+        </a>
+        <div class="menu-container">
+            <ul>
+                <li style="margin: 0;"><a href="#contact" class="cta">Contact</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#custom">Custom Websites</a></li>
+                <li><a href="#home">Home</a></li>
+            </ul>
+        </div>
+        <div id="webapp_cover">
+            <div id="menu_button">
+                <input type="checkbox" id="menu_checkbox">
+                <label for="menu_checkbox" onclick="toggleNav()" id="menu_label" class="menu-toggler">
+                    <div id="menu_text_bar"></div>
+                </label>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="my-sidenav" class="sidenav">
+        <div>
+            <a href="#home" id="sidenav-item" onclick="closeNav()">Home</a>
+            <a href="#custom" id="sidenav-item" onclick="closeNav()">Custom Websites</a>
+            <a href="#testimonials" id="sidenav-item" onclick="closeNav()">Testimonials</a>
+            <a href="#contact" id="sidenav-item" onclick="closeNav()">Contact</a>
+        </div>
+        <div class="sidenav-extras">
+            <img src="/asset/img/ab_webdev_logo.svg" alt="ab Design Logo">
+            <h1>ab Design</h1>
+        </div>
+    </div>
+
+    <section id="design-process" onclick="closeNav()">
+        <article>
+            <h1>It's all about communication.</h1>
+            <h4>The Design Phase</h4>
+
+            <p>On day 1 of the project timeline, we will call you to discuss how you want your website to look. Whether you want us to mimic the look and feel of an existing website, or you have a completely original design idea in mind, the floor is yours.</p>
+            <p>The minute that the phone call disconnects, we're already working on creating the first mock-up prototype in our design software. Once we feel like we've captured your idea, we'll send you a copy that you can review.</p>
+            <p>If you come across anything in the mock-up that you'd like to change, no worries! We offer FREE EDITS to the design up until 7 days before the end of the project timeline.</p>
+
+            <h4>The Development Phase</h4>
+
+            <p>Once you've given us the green light on the design, we get to work developing clean, hand-written HTML5, CSS3, and JavaScript source code.</p>
+            <p>As part of our standard processes and procedures, we always analyze our source code using Google's <a href="https://en.wikipedia.org/wiki/Google_Lighthouse" target="_blank">Lighthouse</a>, a trusted webpage performance analyzer, in order to acheive the best webpage performance possible.</p>
+
+            <h4>The Delivery Phase</h4>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolore cum facere vitae dolorum incidunt consequuntur eveniet quibusdam molestias natus asperiores odio, excepturi hic itaque nihil expedita. Cumque eos ullam, similique voluptate architecto sed quae velit accusamus!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, maiores? Recusandae tempora tenetur nesciunt! Laboriosam doloribus rerum sed possimus architecto id a molestias. Incidunt dicta, inventore doloremque, assumenda excepturi id porro iusto, fuga odio quod rem. Placeat minus inventore optio perspiciatis at soluta cumque dolorem excepturi voluptate, adipisci rerum iste.</p>
+
+            <div style="text-align: center;">
+                <h4>To summarize:</h4>
+                <ul>
+                    <li>
+                        <p>You tell us what you want.</p>
+                    </li>
+                    <li>
+                        <p>We bring your ideas to life in an<br>interactive and responsive website.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <h4 style="text-align: center; margin: 0;">Click below to</h4>
+            <div class="cta-container">
+                <a href="./index.html#contact" class="btn">
+                    <h5>Get started</h5>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
