@@ -192,21 +192,17 @@ section article .cta-container a.btn i.fas {
 }
 
 section article .swiper-container {
-  width: 100%;
-  height: 400px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  width: 50%;
+  height: 500px;
 }
 
 section article .swiper-container .swiper-slide {
   background-position: center;
   background-size: cover;
-  background: #F7FBFB;
-  padding: 1rem 2rem;
-  height: 400px;
+  background: #f4fdfd;
+  padding: 4rem 5rem;
+  height: 100%;
+  width: 100%;
 }
 
 section article .swiper-container .swiper-slide * {
@@ -230,7 +226,7 @@ section article .swiper-container .swiper-slide p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 2vmax;
+  font-size: 1.5vmax;
 }
 
 section article .swiper-container .swiper-slide p span {
@@ -238,9 +234,10 @@ section article .swiper-container .swiper-slide p span {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 0;
-  padding: 1rem 0 0 0;
+  padding: 3rem 0 0 0;
   font-style: italic;
   font-weight: 600;
+  color: #7e99a5;
 }
 
 section article .swiper-container .swiper-slide p span:before {
@@ -578,7 +575,7 @@ section#home .title-container .cta-container i.fas {
 
 /* CUSTOM */
 section#custom {
-  background: #F7FBFB;
+  background: #f4fdfd;
 }
 
 section#custom article .process {
@@ -735,12 +732,29 @@ section#custom article .process .step .detail .bottom p {
 
 /* TESTIMONIALS */
 section#testimonials {
-  margin-bottom: 60px;
+  min-height: unset;
+  height: auto;
+  margin-bottom: 120px;
+}
+
+section#testimonials article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section#testimonials article .title-container {
+  width: 50%;
+  margin-right: 5rem;
+}
+
+section#testimonials article .title-container h4 {
+  margin-bottom: 0px;
 }
 
 /* CONTACT */
 section#contact {
-  background: #F7FBFB;
+  background: #f4fdfd;
   height: 100%;
   margin-bottom: 60px;
 }
@@ -882,12 +896,19 @@ footer {
   section article {
     margin-top: 60px;
   }
+  section article .swiper-container .swiper-slide {
+    padding: 3rem 4rem;
+  }
+  section article .swiper-container .swiper-slide p {
+    font-size: 1.85vmax;
+  }
   /* MAIN NAV */
   nav {
     padding: 0 5rem;
   }
   nav .menu-container ul li a {
     font-size: 1.65rem;
+    margin-left: 30px;
   }
   /* SIDENAV */
   /* HOME */
@@ -909,6 +930,12 @@ footer {
   }
   section article .cta-container a.btn:hover .fas {
     padding-left: 0;
+  }
+  section article .swiper-container .swiper-slide {
+    padding: 2rem 2rem;
+  }
+  section article .swiper-container .swiper-slide p {
+    font-size: 2vmax;
   }
   /* MAIN NAV */
   nav .menu-container {
@@ -982,6 +1009,17 @@ footer {
 
 @media (max-width: 768px) {
   /* GLOBAL SETTINGS */
+  section article .swiper-container {
+    width: 80%;
+    height: 400px;
+    margin-top: 3rem;
+  }
+  section article .swiper-container .swiper-slide h4 {
+    font-size: 4vmin;
+  }
+  section article .swiper-container .swiper-slide p {
+    font-size: 1.85vmax;
+  }
   /* MAIN NAV */
   /* SIDENAV */
   /* HOME */
@@ -996,6 +1034,27 @@ footer {
             flex-direction: column;
   }
   /* TESTIMONIALS */
+  section#testimonials {
+    min-height: unset;
+    height: auto;
+    margin-bottom: 60px;
+  }
+  section#testimonials article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#testimonials article .title-container {
+    width: 100%;
+    margin-right: 5rem;
+  }
+  section#testimonials article .title-container h4 {
+    margin-bottom: 0px;
+  }
   /* CONTACT */
   section#contact article h1 {
     text-align: center;
@@ -1028,6 +1087,20 @@ footer {
   /* GLOBAL SETTINGS */
   section article {
     margin-top: 20px;
+  }
+  section article .swiper-container {
+    width: 100%;
+    height: 375px;
+    margin-top: 3rem;
+  }
+  section article .swiper-container .swiper-slide h4 {
+    font-size: 5vmin;
+  }
+  section article .swiper-container .swiper-slide p {
+    font-size: 1.85vmax;
+  }
+  section article .swiper-container .swiper-slide p span {
+    padding-top: 1.5rem;
   }
   /* MAIN NAV */
   nav {
