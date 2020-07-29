@@ -194,7 +194,7 @@ section article .cta-container a.btn i.fas {
 
 section article .swiper-container {
   width: 50%;
-  min-height: 550px;
+  min-height: 350px;
 }
 
 section article .swiper-container .swiper-slide {
@@ -578,10 +578,13 @@ section#services .service-offerings {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 60px;
-  overflow-x: scroll;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
 }
 
 section#services .service-offerings .card {
@@ -596,7 +599,7 @@ section#services .service-offerings .card {
           flex-direction: column;
   text-align: center;
   padding: 4rem;
-  margin: 0 2rem;
+  margin-bottom: 4rem;
   border-radius: 10px;
   scroll-snap-align: start;
 }
@@ -1088,6 +1091,13 @@ footer {
   section#home .title-container .cta-container a.btn:hover .fas {
     padding-left: 0;
   }
+  /* SERVICES */
+  section#services article {
+    width: 95%;
+  }
+  section#services article h1, section#services article h4 {
+    padding: 0 10%;
+  }
   /* CUSTOM */
   section#custom article .process .step {
     -webkit-box-orient: vertical;
@@ -1132,8 +1142,11 @@ footer {
   /* GLOBAL SETTINGS */
   section article .swiper-container {
     width: 80%;
-    height: 400px;
+    min-height: 400px;
     margin-top: 3rem;
+  }
+  section article .swiper-container .swiper-slide {
+    min-height: 450px;
   }
   section article .swiper-container .swiper-slide h4 {
     font-size: 4vmin;
@@ -1153,6 +1166,26 @@ footer {
   }
   section#services article h1, section#services article h4 {
     padding: 0 10%;
+  }
+  section#services article .service-offerings .card {
+    width: 325px;
+    padding: 2rem;
+  }
+  section#services article .service-offerings .card .graphic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  section#services article .service-offerings .card .graphic img {
+    width: 50%;
   }
   /* CUSTOM */
   section#custom article .process .step .detail .top {
@@ -1218,7 +1251,6 @@ footer {
   }
   section article .swiper-container {
     width: 100%;
-    height: 375px;
     margin-top: 3rem;
   }
   section article .swiper-container .swiper-slide h4 {

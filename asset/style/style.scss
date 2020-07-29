@@ -182,7 +182,7 @@ section{
 
         .swiper-container {
             width: 50%;
-            min-height: 550px;
+            min-height: 350px;
         
             .swiper-slide{
                 background-position: center;
@@ -475,9 +475,10 @@ section#services{
 
     .service-offerings{
         display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
         margin-bottom: 60px;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
+        scroll-snap-type: y mandatory;
 
         .card{
             min-height: 500px;
@@ -486,7 +487,7 @@ section#services{
             flex-direction: column;
             text-align: center;
             padding: 4rem;
-            margin: 0 2rem;
+            margin-bottom: 4rem;
             border-radius: $border-round;
             scroll-snap-align: start;
 
@@ -981,6 +982,18 @@ $bp-mobile-s: 320px;
         }
     }
 
+    /* SERVICES */
+    section#services{
+
+        article{
+            width: 95%;
+
+            h1, h4{
+                padding: 0 10%;
+            }
+        }
+    }
+
     /* CUSTOM */
     section#custom{
 
@@ -1040,10 +1053,11 @@ $bp-mobile-s: 320px;
         article{
             .swiper-container{
                 width: 80%;
-                height: 400px;
+                min-height: 400px;
                 margin-top: 3rem;
             
                 .swiper-slide{
+                    min-height: 450px;
     
                     h4{
                         font-size: 4vmin;
@@ -1072,6 +1086,25 @@ $bp-mobile-s: 320px;
 
             h1, h4{
                 padding: 0 10%;
+            }
+
+            .service-offerings{
+                .card{
+                    width: 325px;
+                    padding: 2rem;
+
+                    .graphic{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        margin-bottom: 2rem;
+        
+                        img{
+                            width: 50%;
+                        }
+                    }
+                }
             }
         }
     }
@@ -1150,7 +1183,6 @@ $bp-mobile-s: 320px;
 
             .swiper-container{
                 width: 100%;
-                height: 375px;
                 margin-top: 3rem;
             
                 .swiper-slide{
@@ -1181,6 +1213,8 @@ $bp-mobile-s: 320px;
     section#home{
         background-size: 50%;
     }
+
+    
 
     /* CUSTOM */
     
