@@ -50,27 +50,27 @@ html h6.light {
 }
 
 html h1 {
-  font-size: 5.5vmax;
+  font-size: 5.25vmax;
 }
 
 html h2 {
-  font-size: 4.5vmax;
+  font-size: 4.25vmax;
 }
 
 html h3 {
-  font-size: 3.5vmax;
+  font-size: 3.25vmax;
 }
 
 html h4 {
-  font-size: 2.5vmax;
+  font-size: 2.25vmax;
 }
 
 html h5 {
-  font-size: 2vmax;
+  font-size: 1.75vmax;
 }
 
 html h6 {
-  font-size: 2vmax;
+  font-size: 1.75vmax;
 }
 
 html p,
@@ -194,7 +194,7 @@ section article .cta-container a.btn i.fas {
 
 section article .swiper-container {
   width: 50%;
-  height: 550px;
+  min-height: 550px;
 }
 
 section article .swiper-container .swiper-slide {
@@ -572,6 +572,87 @@ section#home .title-container .cta-container i.fas {
   margin: 0 0 -2px 2rem;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
+}
+
+section#services .service-offerings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
+section#services .service-offerings .card {
+  min-height: 500px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 4rem;
+  margin: 0 2rem;
+  border-radius: 10px;
+  scroll-snap-align: start;
+}
+
+section#services .service-offerings .card .graphic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 270px;
+  margin-bottom: 2rem;
+}
+
+section#services .service-offerings .card .graphic img {
+  width: 50%;
+}
+
+section#services .service-offerings .card .text * {
+  color: #fff;
+}
+
+section#services .service-offerings .card .text h1 {
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+section#services .service-offerings .card .text p,
+section#services .service-offerings .card .text a {
+  font-size: 1.75rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+section#services .service-offerings .card#logo-design {
+  background: #FFB75C;
+}
+
+section#services .service-offerings .card#optimized {
+  background: #91BCCF;
+}
+
+section#services .service-offerings .card#hosting {
+  background: #2E3C42;
+}
+
+section#services .service-offerings .card#seo {
+  background: #f4fdfd;
+}
+
+section#services .service-offerings .card#seo * {
+  color: #2E3C42;
 }
 
 /* CUSTOM */
@@ -1065,6 +1146,13 @@ footer {
   /* HOME */
   section#home {
     background-size: 40%;
+  }
+  /* SERVICES */
+  section#services article {
+    width: 95%;
+  }
+  section#services article h1, section#services article h4 {
+    padding: 0 10%;
   }
   /* CUSTOM */
   section#custom article .process .step .detail .top {

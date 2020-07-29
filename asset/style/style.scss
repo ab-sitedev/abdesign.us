@@ -60,27 +60,27 @@ html h6{
 }
 
 html h1{
-    font-size:5.5vmax;
+    font-size:5.25vmax;
 }
 
 html h2{
-    font-size: 4.5vmax;
+    font-size: 4.25vmax;
 }
 
 html h3{
-    font-size: 3.5vmax;
+    font-size: 3.25vmax;
 }
 
 html h4{
-    font-size: 2.5vmax;
+    font-size: 2.25vmax;
 }
 
 html h5{
-    font-size: 2vmax;
+    font-size: 1.75vmax;
 }
 
 html h6{
-    font-size: 2vmax;
+    font-size: 1.75vmax;
 }
 
 html p,
@@ -182,7 +182,7 @@ section{
 
         .swiper-container {
             width: 50%;
-            height: 550px;
+            min-height: 550px;
         
             .swiper-slide{
                 background-position: center;
@@ -466,6 +466,77 @@ section#home{
                 font-size: 2vmax;
                 margin: 0 0 -2px 2rem;
                 transition: all .25s ease-in-out;
+            }
+        }
+    }
+}
+
+section#services{
+
+    .service-offerings{
+        display: flex;
+        margin-bottom: 60px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+
+        .card{
+            min-height: 500px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 4rem;
+            margin: 0 2rem;
+            border-radius: $border-round;
+            scroll-snap-align: start;
+
+            .graphic{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 270px;
+                margin-bottom: 2rem;
+
+                img{
+                    width: 50%;
+                }
+            }
+
+            .text{
+                *{
+                    color: #fff;
+                }
+
+                h1{
+                    font-size: 2.25rem;
+                    margin-bottom: 2rem;
+                }
+
+                p,
+                a{
+                    font-size: 1.75rem;
+                    font-family: $font-heading;
+                    margin: 0;
+                }
+            }
+
+            &#logo-design{
+                background: $color-complimentary-orange;
+            }
+
+            &#optimized{
+                background: $color-primary-light;
+            }
+
+            &#hosting{
+                background: $color-primary;
+            }
+
+            &#seo{
+                background: $color-background-light;
+                *{
+                    color: $color-primary;
+                }
             }
         }
     }
@@ -991,6 +1062,18 @@ $bp-mobile-s: 320px;
     /* HOME */
     section#home{
         background-size: 40%;
+    }
+
+    /* SERVICES */
+    section#services{
+
+        article{
+            width: 95%;
+
+            h1, h4{
+                padding: 0 10%;
+            }
+        }
     }
 
     /* CUSTOM */
