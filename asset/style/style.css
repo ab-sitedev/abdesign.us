@@ -841,7 +841,7 @@ section#testimonials article .title-container h4 {
 section#contact {
   background: #f4fdfd;
   height: 100%;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 section#contact .form-container {
@@ -975,7 +975,128 @@ section#design-process article ul li p {
 }
 
 footer {
-  height: 300px;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer * {
+  color: #91BCCF;
+}
+
+footer h1 {
+  font-size: 3.5rem;
+  margin: 2rem 0;
+}
+
+footer p, footer a {
+  font-size: 2rem;
+}
+
+footer .row {
+  height: 100%;
+  width: 100%;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .row .col {
+  padding: 0 2rem;
+}
+
+footer .row .left-container {
+  width: 33.333%;
+}
+
+footer .row .left-container .col#about {
+  width: 100%;
+}
+
+footer .row .left-container .col#about .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .row .left-container .col#about .about-content img {
+  width: 175px;
+  height: 175px;
+}
+
+footer .row .left-container .col#about .about-content p {
+  margin-left: 2rem;
+}
+
+footer .row .right-container {
+  width: 66.666%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .row .right-container .col {
+  width: 50%;
+  height: 100%;
+}
+
+footer .row .right-container a {
+  color: #91BCCF;
+  text-decoration: none;
+}
+
+footer .row .right-container a:hover {
+  color: #607E8A;
+}
+
+footer .row .right-container ul {
+  list-style: none;
+}
+
+footer .row .right-container ul li {
+  margin: .75rem 0;
+}
+
+footer .row .right-container .cta-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+footer .row .right-container .cta-container a.btn {
+  padding: 1rem 3rem;
+  color: #2E3C42;
+  font-weight: 700;
+  background: #69FFE0;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  border-radius: 10px;
+}
+
+footer .row .right-container .cta-container a.btn:hover {
+  background: #5CFF82;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+footer .row.foot {
+  height: 120px;
+  width: 100%;
+  background: #2E3C42;
+  margin-top: 2rem;
 }
 
 /* breakpoints */
@@ -1012,6 +1133,34 @@ footer {
   }
   section#contact .form-container .spacer {
     width: 90%;
+  }
+  footer {
+    min-height: 300px;
+  }
+  footer .row .left-container {
+    width: 50%;
+  }
+  footer .row .left-container .col#about .about-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .row .left-container .col#about .about-content p {
+    margin: 2rem 0;
+  }
+  footer .row .right-container {
+    width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .row .right-container .col {
+    width: 100%;
+  }
+  footer .row .right-container .cta-container {
+    width: 100%;
   }
 }
 
@@ -1241,6 +1390,44 @@ footer {
     height: 100px;
     width: 100%;
     background-image: url(../img/ab_webdev_logo.svg);
+  }
+  footer {
+    min-height: 300px;
+  }
+  footer .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .row .left-container {
+    width: 100%;
+  }
+  footer .row .left-container .col#about .about-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .row .left-container .col#about .about-content p {
+    margin: 2rem 0;
+  }
+  footer .row .right-container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .row .right-container .col {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  footer .row .right-container .cta-container {
+    width: 100%;
+  }
+  footer .row.foot {
+    height: 6rem;
   }
 }
 
