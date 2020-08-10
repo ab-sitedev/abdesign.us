@@ -574,6 +574,10 @@ section#home .title-container .cta-container i.fas {
   transition: all .25s ease-in-out;
 }
 
+section#services h4#stand-out {
+  text-shadow: 0 -0.5px 0 #91BCCF, 0 1px 0 #37454d, 0 2px 0 #37454d, 0 3px 0 #37454d, 0 4px 0 #37454d, 0 5px 0 #37454d, 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
 section#services .service-offerings {
   display: -webkit-box;
   display: -ms-flexbox;

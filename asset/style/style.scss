@@ -472,6 +472,17 @@ section#home{
 }
 
 section#services{
+    h4#stand-out{
+        text-shadow:
+        0 -0.5px 0 $color-primary-light,
+        0 1px 0 rgb(55, 69, 77),
+        0 2px 0 rgb(55, 69, 77),
+        0 3px 0 rgb(55, 69, 77),
+        0 4px 0 rgb(55, 69, 77),
+        0 5px 0 rgb(55, 69, 77),
+        0 12px 20px rgba(0,0,0,0.3)
+        ;
+    }
 
     .service-offerings{
         display: flex;
