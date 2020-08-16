@@ -6,15 +6,12 @@ var now = new Date();
         hour12: true
     });
     if (0 <= hours && hours < 12) {//Morning
-        
         var type = "morning";
     }
     if (12 <= hours && hours < 17) {//Afternoon
-        
         var type = "afternoon";
     }
-    if (17 <= hours && hours < 0) {//Evening
-        
+    if (17 <= hours && hours < 24) {//Evening
         var type = "evening";
     }
     document.getElementById("greeting").innerHTML = `Good ${type},`;
