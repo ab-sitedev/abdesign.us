@@ -60,7 +60,7 @@ html h6{
 }
 
 html h1{
-    font-size:5.25vmax;
+    font-size: 5.25vmax;
 }
 
 html h2{
@@ -534,6 +534,9 @@ section#services{
 
             &#logo-design{
                 background: $color-complimentary-orange;
+                *{
+                    color: $color-primary;
+                }
             }
 
             &#optimized{
@@ -1211,7 +1214,7 @@ $bp-mobile-s: 320px;
         article{
             .swiper-container{
                 width: 80%;
-                min-height: 400px;
+                min-height: 350px;
                 margin-top: 3rem;
             
                 .swiper-slide{
@@ -1377,6 +1380,18 @@ $bp-mobile-s: 320px;
 }
 
 @media(max-width: $bp-mobile-l){
+    html h1{
+        font-size: 4.65vmax;
+    }
+    
+    html h4{
+        font-size: 3vmax;
+    }
+
+    .swiper-pagination{
+        z-index: 50;
+        margin-bottom: 20px;
+    }
     
     /* GLOBAL SETTINGS */
     section{    

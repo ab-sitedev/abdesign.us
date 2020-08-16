@@ -646,6 +646,10 @@ section#services .service-offerings .card#logo-design {
   background: #FFB75C;
 }
 
+section#services .service-offerings .card#logo-design * {
+  color: #2E3C42;
+}
+
 section#services .service-offerings .card#optimized {
   background: #91BCCF;
 }
@@ -1295,7 +1299,7 @@ footer .row.foot {
   /* GLOBAL SETTINGS */
   section article .swiper-container {
     width: 80%;
-    min-height: 400px;
+    min-height: 350px;
     margin-top: 3rem;
   }
   section article .swiper-container .swiper-slide {
@@ -1436,6 +1440,16 @@ footer .row.foot {
 }
 
 @media (max-width: 425px) {
+  html h1 {
+    font-size: 4.65vmax;
+  }
+  html h4 {
+    font-size: 3vmax;
+  }
+  .swiper-pagination {
+    z-index: 50;
+    margin-bottom: 20px;
+  }
   /* GLOBAL SETTINGS */
   section article {
     margin-top: 20px;
